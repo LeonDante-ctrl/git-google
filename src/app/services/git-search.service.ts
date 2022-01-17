@@ -13,7 +13,7 @@ export class GitSearchService {
   constructor(private http: HttpClient) {}
   getMyInfo(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/LeonDante-ctrl?access_token=${environment.apiKey}`;
+      const apiUrl = `https://api.github.com/users/LeonDante-ctrl' + '?access_token=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`;
       this.http
         .get<any>(apiUrl)
         .toPromise()
@@ -25,7 +25,7 @@ export class GitSearchService {
   }
   getMyRepos(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/LeonDante-ctrl/repos?access_token=${environment.apiKey}`;
+      const apiUrl = `https://api.github.com/users/LeonDante-ctrl/repos' + ?access_token=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'`;
       this.http
         .get<any>(apiUrl)
         .toPromise()
