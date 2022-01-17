@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { Effect } from './Directives/effect';
 import { CountTimePassedPipe } from './Pipes/time-count.pipe';
+import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     CountTimePassedPipe,
-    Effect
+    Effect,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
