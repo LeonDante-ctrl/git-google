@@ -1,23 +1,32 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GitProfileComponent } from './components/profile/profile.component';
-import { Effect } from './Directives/effect';
 import { CountTimePassedPipe } from './Pipes/time-count.pipe';
+import { Effect } from './Directives/effect';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
+import { GitProfileComponent } from './components/profile/profile.component';
+import { GithubSearchComponent } from './components/search/github-search/github-search.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GitProfileComponent,
     CountTimePassedPipe,
     Effect,
-    NavbarComponent
+    NavbarComponent,
+    GitProfileComponent,
+    GithubSearchComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
