@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { GitProfileComponent } from './components/profile/profile.component';
 import { Effect } from './Directives/effect';
 import { CountTimePassedPipe } from './Pipes/time-count.pipe';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
@@ -11,7 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
+    GitProfileComponent,
     CountTimePassedPipe,
     Effect,
     NavbarComponent
