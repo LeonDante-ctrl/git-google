@@ -19,7 +19,6 @@ Github Finder is a web application that uses the GitHub API to perform searches 
 | --------- | ------| ------ |
 |Show github profile|Enter the Username in the search box and cick `search`|Displays name, username, bio, number of repositories, Hireable, date of creating the repo, followers, following and public gists|
 |Search gitub repositories | Navigate to Repos page click on `Repositories` and type the name of repository.|Displays a list of 10 repositories based on the query|
-|Load more search Results	|Click `Load More` button on the Find Repos page |Adds 10 more results in the search results|
 |Redirect to github profile on Github website | Click the `view on github` button of a Github user | Opens the profile on the Github website|
 |Redirect to a specific Github Repository | Click the `view on github` button of a repository on repositories page | Opens the Repository on Github website |
 
